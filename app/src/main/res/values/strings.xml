@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">hackathonAcumen</string>
+    <string name="title_activity_after_login">AfterLogin</string>
+
+</resources>

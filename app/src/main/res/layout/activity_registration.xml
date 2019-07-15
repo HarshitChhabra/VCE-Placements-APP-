@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Email:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Email"
+            android:textSize="20sp"
+            android:layout_above="@+id/Phone"
+            android:layout_alignLeft="@+id/NAME"
+            android:layout_alignStart="@+id/NAME"
+            android:layout_alignTop="@+id/email" />
+
+        <TextView
+            android:text="CGPA:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cgpa"
+            android:textSize="20sp"
+            android:layout_alignBaseline="@+id/cgpa"
+            android:layout_alignBottom="@+id/cgpa"
+            android:layout_alignLeft="@+id/Phone"
+            android:layout_alignStart="@+id/Phone" />
+
+
+        <TextView
+            android:text="DETAILS"
+            android:layout_width="wrap_content"
+            android:id="@+id/details"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Password:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Pass"
+            android:textSize="20sp"
+            android:layout_below="@+id/Roll"
+            android:layout_alignRight="@+id/Phone"
+            android:layout_alignEnd="@+id/Phone"
+            android:layout_marginTop="52dp" />
+
+        <TextView
+            android:text="About Me:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/About"
+            android:textSize="20sp"
+            android:layout_alignTop="@+id/aboutme"
+            android:layout_alignRight="@+id/Achieve"
+            android:layout_alignEnd="@+id/Achieve" />
+
+        <TextView
+            android:text="Phone no:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:id="@+id/Phone"
+            android:textSize="20sp"
+            android:layout_below="@+id/email"
+            android:layout_alignLeft="@+id/Email"
+            android:layout_alignStart="@+id/Email" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/phone"
+            android:background="@android:color/background_light"
+            android:hint="Enter 10-digit no."
+            android:layout_above="@+id/rollnum"
+            android:layout_alignLeft="@+id/email"
+            android:layout_alignStart="@+id/email" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/email"
+            android:background="@android:color/background_light"
+            android:hint="Enter email-id"
+            android:layout_marginTop="26dp"
+            android:layout_below="@+id/name"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/rollnum"
+            android:background="@android:color/background_light"
+            android:hint="Eg: 1602-16-733-078"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/Phone"
+            android:layout_alignLeft="@+id/phone"
+            android:layout_alignStart="@+id/phone" />
+
+        <TextView
+            android:text="Roll No:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Roll"
+            android:textSize="20sp"
+            android:layout_alignBaseline="@+id/rollnum"
+            android:layout_alignBottom="@+id/rollnum"
+            android:layout_alignLeft="@+id/Phone"
+            android:layout_alignStart="@+id/Phone" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password"
+            android:background="@android:color/background_light"
+            android:hint="Min length 6"
+            android:layout_alignBottom="@+id/Pass"
+            android:layout_alignRight="@+id/rollnum"
+            android:layout_alignEnd="@+id/rollnum" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/name"
+            android:background="@android:color/background_light"
+            android:hint="Enter your name"
+            android:layout_alignBottom="@+id/NAME"
+            android:layout_alignLeft="@+id/details"
+            android:layout_alignStart="@+id/details" />
+
+        <TextView
+            android:text="Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NAME"
+            android:layout_marginTop="11dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/details"
+            android:layout_alignLeft="@+id/About"
+            android:layout_alignStart="@+id/About" />
+
+        <TextView
+            android:text="Achievements:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Achieve"
+            android:textSize="20sp"
+            android:layout_alignTop="@+id/achievements"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/cgpa"
+            android:hint="10"
+            android:background="@android:color/background_light"
+            android:layout_marginTop="26dp"
+            android:layout_below="@+id/password"
+            android:layout_alignLeft="@+id/password"
+            android:layout_alignStart="@+id/password" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/achievements"
+            android:background="@android:color/background_light"
+            android:layout_below="@+id/cgpa"
+            android:layout_alignLeft="@+id/cgpa"
+            android:layout_alignStart="@+id/cgpa"
+            android:layout_marginTop="28dp"
+            android:layout_height="60dp" />
+
+        <Button
+            android:text="Upload Resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resumeButton"
+            android:layout_below="@+id/aboutme"
+            android:layout_alignLeft="@+id/Pass"
+            android:layout_alignStart="@+id/Pass"
+            android:layout_marginTop="18dp" />
+
+        <Button
+            android:text="Sign up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupButton"
+            android:layout_below="@+id/resumeButton"
+            android:layout_toRightOf="@+id/resumeButton"
+            android:layout_toEndOf="@+id/resumeButton"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="17dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/aboutme"
+            android:background="@android:color/background_light"
+            android:layout_below="@+id/achievements"
+            android:layout_alignLeft="@+id/achievements"
+            android:layout_alignStart="@+id/achievements"
+            android:layout_marginTop="46dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/selectedFile"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_width="80dp"
+            android:layout_alignBaseline="@+id/resumeButton"
+            android:layout_alignBottom="@+id/resumeButton"
+            android:layout_alignLeft="@+id/signupButton"
+            android:layout_alignStart="@+id/signupButton" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
