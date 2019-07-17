@@ -1,4 +1,4 @@
-# VCE-Placements-APP-
+# VCE-Placements-APP
 This app is used to manage placement activities in a college. 
 
 **Users:** Students, Faculty, Company HR
